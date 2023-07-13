@@ -1,0 +1,18 @@
+{
+  "url": "http://sigma/audio/transcribe",
+  "headers": {
+    "Content-Type": "audio/wav",
+    "Authorization": "Bearer your-token"
+  },
+  "request": {
+    "method": "POST",
+    "data": "<binary-audio-data>"
+  },
+  "response": {
+    "status": 200,
+    "data": {
+      "transcription": "This is the transcribed text.",
+      "confidence": 0.95
+    }
+  }
+}
